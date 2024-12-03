@@ -1,7 +1,7 @@
 import { Column, Entity, PrimaryColumn } from "typeorm";
 
-@Entity()
-export class Personal {
+@Entity({ name: 'staffs'})
+export class Staff {
     @PrimaryColumn('uuid')
     id: string
 
@@ -109,4 +109,10 @@ export class Personal {
         nullable: true
     })
     obra_social: string
+
+//     estado:
+
+//     createAt
+
+//     updateAt
 }
